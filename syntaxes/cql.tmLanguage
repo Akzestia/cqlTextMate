@@ -89,7 +89,7 @@
             <key>name</key>
             <string>constant.language.boolean.cql</string>
             <key>match</key>
-            <string>\b(true|false)\b</string>
+            <string>\b(true|false|null)\b</string>
           </dict>
           <dict>
             <key>name</key>
@@ -119,13 +119,13 @@
             <key>name</key>
             <string>keyword.control.cql</string>
             <key>match</key>
-            <string>\b(SELECT|INSERT|COMPACTION|UPDATE|EDGE|LABEL|DELETE|RENAME|CREATE|DROP|ALTER|TRUNCATE|USE|BEGIN|BATCH|APPLY|FROM|INTO|WHERE|SET|IF|AND|OR|NOT|EXISTS|WITH|ORDER|BY|LIMIT|USING|ALLOW|FILTERING|PRIMARY|KEY|IF|NOT|EXISTS|ADD|TO)\b</string>
+            <string>\b(SELECT|INSERT|UPDATE|DELETE|USE|CREATE|ALTER|DROP|TRUNCATE|RENAME|BEGIN|APPLY|BATCH|COMMIT|FROM|INTO|WHERE|SET|VALUES|IF|AND|OR|NOT|EXISTS|WITH|ORDER|BY|GROUP|HAVING|LIMIT|ALLOW|FILTERING|PRIMARY|KEY|ADD|TO|AS|IN|ON|USING|JSON|DISTINCT)\b</string>
           </dict>
           <dict>
             <key>name</key>
             <string>keyword.other.cql</string>
             <key>match</key>
-            <string>\b(KEYSPACE|TABLE|COLUMN|TYPE|USER|ROLE|PERMISSION|INDEX|MATERIALIZED|VIEW|FUNCTION|AGGREGATE)\b</string>
+            <string>\b(KEYSPACE|TABLE|TYPE|VIEW|MATERIALIZED|INDEX|FUNCTION|AGGREGATE|ROLE|ALL|MODIFY|IS|USER|PASSWORD|SUPERUSER|NOSUPERUSER|GRANT|REVOKE|AUTHORIZE|PERMISSIONS|LOGIN|OPTIONS|REPLICATION|DURABLE_WRITES|CONSISTENCY|LEVEL|QUORUM|LOCAL_ONE|LOCAL_QUORUM|EACH_QUORUM|ONE|TWO|THREE|SEARCH|DESCRIBE|CLUSTERING|PARTITION|STATIC|CUSTOM|REPLACE|CALLED|RETURNS|LANGUAGE|SFUNC|STYPE|FINALFUNC|INITCOND|EXECUTE|ACCESS|PROFILES|CONFIG|ROWS|COLUMNS|KEYSPACES|USERS|ROLES|FUNCTIONS|MBEAN|MBEANS|PATTERN|PROXY|ID|LIKE|ANN|OFFSET|VERTEX|EDGE|LABEL)\b</string>
           </dict>
         </array>
       </dict>
@@ -137,7 +137,7 @@
             <key>name</key>
             <string>storage.type.cql</string>
             <key>match</key>
-            <string>\b(ASCII|BIGINT|BLOB|BOOLEAN|COUNTER|DATE|DECIMAL|DOUBLE|FLOAT|FROZEN|INET|INT|LIST|MAP|SET|SMALLINT|TEXT|TIME|TIMESTAMP|TIMEUUID|TINYINT|TUPLE|UUID|VARCHAR|VARINT|graph_engine)\b</string>
+            <string>\b(ASCII|BIGINT|BLOB|BOOLEAN|COUNTER|DATE|DECIMAL|DOUBLE|FLOAT|FROZEN|INET|INT|LIST|MAP|SET|SMALLINT|TEXT|TIME|TIMESTAMP|TIMEUUID|TINYINT|TUPLE|UUID|VARCHAR|VARINT|NULL|graph_engine)\b</string>
           </dict>
         </array>
       </dict>
@@ -149,7 +149,7 @@
             <key>name</key>
             <string>support.function.cql</string>
             <key>match</key>
-            <string>\b(count|max|min|sum|avg|token|writetime|ttl)\b</string>
+            <string>\b(COUNT|MAX|MIN|SUM|AVG|TOKEN|WRITETIME|TTL|FULL)\b</string>
           </dict>
         </array>
       </dict>
@@ -161,7 +161,7 @@
             <key>name</key>
             <string>keyword.operator.comparison.cql</string>
             <key>match</key>
-            <string>(=|&gt;|&lt;|&gt;=|&lt;=|!=)</string>
+            <string>(=|!=|&lt;|&gt;|&lt;=|&gt;=)</string>
           </dict>
           <dict>
             <key>name</key>
@@ -173,7 +173,7 @@
             <key>name</key>
             <string>keyword.operator.arithmetic.cql</string>
             <key>match</key>
-            <string>(\+|\-|\*|/|%)</string>
+            <string>(\+|-|\*|/|%)</string>
           </dict>
         </array>
       </dict>
