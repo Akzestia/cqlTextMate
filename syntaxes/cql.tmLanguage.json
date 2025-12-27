@@ -25,6 +25,7 @@
         }
       ]
     },
+
     "strings": {
       "patterns": [
         {
@@ -37,11 +38,12 @@
         }
       ]
     },
+
     "constants": {
       "patterns": [
         {
           "name": "constant.language.boolean.cql",
-          "match": "\\b(true|false)\\b"
+          "match": "\\b(true|false|null)\\b"
         },
         {
           "name": "constant.numeric.uuid.cql",
@@ -57,39 +59,43 @@
         }
       ]
     },
+
     "keywords": {
       "patterns": [
         {
           "name": "keyword.control.cql",
-          "match": "\\b(SELECT|INSERT|COMPACTION|UPDATE|EDGE|LABEL|DELETE|RENAME|CREATE|DROP|ALTER|TRUNCATE|USE|BEGIN|BATCH|APPLY|FROM|INTO|WHERE|SET|IF|AND|OR|NOT|EXISTS|WITH|ORDER|BY|LIMIT|USING|ALLOW|FILTERING|PRIMARY|KEY|IF|NOT|EXISTS|ADD|TO)\\b"
+          "match": "\\b(SELECT|INSERT|UPDATE|DELETE|USE|CREATE|ALTER|DROP|TRUNCATE|RENAME|BEGIN|APPLY|BATCH|COMMIT|FROM|INTO|WHERE|SET|VALUES|IF|AND|OR|NOT|EXISTS|WITH|ORDER|BY|GROUP|HAVING|LIMIT|ALLOW|FILTERING|PRIMARY|KEY|ADD|TO|AS|IN|ON|USING|JSON|DISTINCT)\\b"
         },
         {
           "name": "keyword.other.cql",
-          "match": "\\b(KEYSPACE|TABLE|COLUMN|TYPE|USER|ROLE|PERMISSION|INDEX|MATERIALIZED|VIEW|FUNCTION|AGGREGATE)\\b"
+          "match": "\\b(KEYSPACE|TABLE|TYPE|VIEW|MATERIALIZED|INDEX|FUNCTION|AGGREGATE|ROLE|ALL|MODIFY|IS|USER|PASSWORD|SUPERUSER|NOSUPERUSER|GRANT|REVOKE|AUTHORIZE|PERMISSIONS|LOGIN|OPTIONS|REPLICATION|DURABLE_WRITES|CONSISTENCY|LEVEL|QUORUM|LOCAL_ONE|LOCAL_QUORUM|EACH_QUORUM|ONE|TWO|THREE|SEARCH|DESCRIBE|CLUSTERING|PARTITION|STATIC|CUSTOM|REPLACE|CALLED|RETURNS|LANGUAGE|SFUNC|STYPE|FINALFUNC|INITCOND|EXECUTE|ACCESS|PROFILES|CONFIG|ROWS|COLUMNS|KEYSPACES|USERS|ROLES|FUNCTIONS|MBEAN|MBEANS|PATTERN|PROXY|ID|LIKE|ANN|OFFSET|VERTEX|EDGE|LABEL)\\b"
         }
       ]
     },
+
     "types": {
       "patterns": [
         {
           "name": "storage.type.cql",
-          "match": "\\b(ASCII|BIGINT|BLOB|BOOLEAN|COUNTER|DATE|DECIMAL|DOUBLE|FLOAT|FROZEN|INET|INT|LIST|MAP|SET|SMALLINT|TEXT|TIME|TIMESTAMP|TIMEUUID|TINYINT|TUPLE|UUID|VARCHAR|VARINT|graph_engine)\\b"
+          "match": "\\b(ASCII|BIGINT|BLOB|BOOLEAN|COUNTER|DATE|DECIMAL|DOUBLE|FLOAT|FROZEN|INET|INT|LIST|MAP|SET|SMALLINT|TEXT|TIME|TIMESTAMP|TIMEUUID|TINYINT|TUPLE|UUID|VARCHAR|VARINT|NULL|graph_engine)\\b"
         }
       ]
     },
+
     "functions": {
       "patterns": [
         {
           "name": "support.function.cql",
-          "match": "\\b(count|max|min|sum|avg|token|writetime|ttl)\\b"
+          "match": "\\b(COUNT|MAX|MIN|SUM|AVG|TOKEN|WRITETIME|TTL|FULL)\\b"
         }
       ]
     },
+
     "operators": {
       "patterns": [
         {
           "name": "keyword.operator.comparison.cql",
-          "match": "(=|>|<|>=|<=|!=)"
+          "match": "(=|!=|<|>|<=|>=)"
         },
         {
           "name": "keyword.operator.assignment.cql",
@@ -97,10 +103,11 @@
         },
         {
           "name": "keyword.operator.arithmetic.cql",
-          "match": "(\\+|\\-|\\*|/|%)"
+          "match": "(\\+|-|\\*|/|%)"
         }
       ]
     },
+
     "identifiers": {
       "patterns": [
         {
