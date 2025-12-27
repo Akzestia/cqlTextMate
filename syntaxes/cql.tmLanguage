@@ -137,7 +137,7 @@
             <key>name</key>
             <string>storage.type.cql</string>
             <key>match</key>
-            <string>\b(ASCII|BIGINT|BLOB|BOOLEAN|COUNTER|DATE|DECIMAL|DOUBLE|FLOAT|FROZEN|INET|INT|LIST|MAP|SET|SMALLINT|TEXT|TIME|TIMESTAMP|TIMEUUID|TINYINT|TUPLE|UUID|VARCHAR|VARINT|NULL|graph_engine)\b</string>
+            <string>(?i)\b(ASCII|BIGINT|BLOB|BOOLEAN|COUNTER|DATE|DECIMAL|DOUBLE|FLOAT|FROZEN|INET|INT|LIST|MAP|SET|SMALLINT|TEXT|TIME|TIMESTAMP|TIMEUUID|TINYINT|TUPLE|UUID|VARCHAR|VARINT|NULL|graph_engine)\b</string>
           </dict>
         </array>
       </dict>
