@@ -41,7 +41,7 @@
       "patterns": [
         {
           "name": "constant.language.boolean.cql",
-          "match": "\\b(?i)(true|false)\\b"
+          "match": "\\b(true|false)\\b"
         },
         {
           "name": "constant.numeric.uuid.cql",
@@ -61,11 +61,11 @@
       "patterns": [
         {
           "name": "keyword.control.cql",
-          "match": "\\b(?i)(SELECT|INSERT|COMPACTION|UPDATE|EDGE|LABEL|DELETE|RENAME|CREATE|DROP|ALTER|TRUNCATE|USE|BEGIN|BATCH|APPLY|FROM|INTO|WHERE|SET|IF|AND|OR|NOT|EXISTS|WITH|ORDER|BY|LIMIT|USING|ALLOW|FILTERING|PRIMARY|KEY|IF|NOT|EXISTS|ADD|TO)\\b"
+          "match": "\\b(SELECT|INSERT|COMPACTION|UPDATE|EDGE|LABEL|DELETE|RENAME|CREATE|DROP|ALTER|TRUNCATE|USE|BEGIN|BATCH|APPLY|FROM|INTO|WHERE|SET|IF|AND|OR|NOT|EXISTS|WITH|ORDER|BY|LIMIT|USING|ALLOW|FILTERING|PRIMARY|KEY|IF|NOT|EXISTS|ADD|TO)\\b"
         },
         {
           "name": "keyword.other.cql",
-          "match": "\\b(?i)(KEYSPACE|TABLE|COLUMN|TYPE|USER|ROLE|PERMISSION|INDEX|MATERIALIZED|VIEW|FUNCTION|AGGREGATE)\\b"
+          "match": "\\b(KEYSPACE|TABLE|COLUMN|TYPE|USER|ROLE|PERMISSION|INDEX|MATERIALIZED|VIEW|FUNCTION|AGGREGATE)\\b"
         }
       ]
     },
@@ -73,7 +73,7 @@
       "patterns": [
         {
           "name": "storage.type.cql",
-          "match": "\\b(?i)(ASCII|BIGINT|BLOB|BOOLEAN|COUNTER|DATE|DECIMAL|DOUBLE|FLOAT|FROZEN|INET|INT|LIST|MAP|SET|SMALLINT|TEXT|TIME|TIMESTAMP|TIMEUUID|TINYINT|TUPLE|UUID|VARCHAR|VARINT|graph_engine)\\b"
+          "match": "\\b(ASCII|BIGINT|BLOB|BOOLEAN|COUNTER|DATE|DECIMAL|DOUBLE|FLOAT|FROZEN|INET|INT|LIST|MAP|SET|SMALLINT|TEXT|TIME|TIMESTAMP|TIMEUUID|TINYINT|TUPLE|UUID|VARCHAR|VARINT|graph_engine)\\b"
         }
       ]
     },
@@ -81,7 +81,7 @@
       "patterns": [
         {
           "name": "support.function.cql",
-          "match": "\\b(?i)(count|max|min|sum|avg|token|writetime|ttl)\\b"
+          "match": "\\b(count|max|min|sum|avg|token|writetime|ttl)\\b"
         }
       ]
     },

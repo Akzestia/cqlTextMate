@@ -89,7 +89,7 @@
             <key>name</key>
             <string>constant.language.boolean.cql</string>
             <key>match</key>
-            <string>\b(?i)(true|false)\b</string>
+            <string>\b(true|false)\b</string>
           </dict>
           <dict>
             <key>name</key>
@@ -119,13 +119,13 @@
             <key>name</key>
             <string>keyword.control.cql</string>
             <key>match</key>
-            <string>\b(?i)(SELECT|INSERT|COMPACTION|UPDATE|EDGE|LABEL|DELETE|RENAME|CREATE|DROP|ALTER|TRUNCATE|USE|BEGIN|BATCH|APPLY|FROM|INTO|WHERE|SET|IF|AND|OR|NOT|EXISTS|WITH|ORDER|BY|LIMIT|USING|ALLOW|FILTERING|PRIMARY|KEY|IF|NOT|EXISTS|ADD|TO)\b</string>
+            <string>\b(SELECT|INSERT|COMPACTION|UPDATE|EDGE|LABEL|DELETE|RENAME|CREATE|DROP|ALTER|TRUNCATE|USE|BEGIN|BATCH|APPLY|FROM|INTO|WHERE|SET|IF|AND|OR|NOT|EXISTS|WITH|ORDER|BY|LIMIT|USING|ALLOW|FILTERING|PRIMARY|KEY|IF|NOT|EXISTS|ADD|TO)\b</string>
           </dict>
           <dict>
             <key>name</key>
             <string>keyword.other.cql</string>
             <key>match</key>
-            <string>\b(?i)(KEYSPACE|TABLE|COLUMN|TYPE|USER|ROLE|PERMISSION|INDEX|MATERIALIZED|VIEW|FUNCTION|AGGREGATE)\b</string>
+            <string>\b(KEYSPACE|TABLE|COLUMN|TYPE|USER|ROLE|PERMISSION|INDEX|MATERIALIZED|VIEW|FUNCTION|AGGREGATE)\b</string>
           </dict>
         </array>
       </dict>
@@ -137,7 +137,7 @@
             <key>name</key>
             <string>storage.type.cql</string>
             <key>match</key>
-            <string>\b(?i)(ASCII|BIGINT|BLOB|BOOLEAN|COUNTER|DATE|DECIMAL|DOUBLE|FLOAT|FROZEN|INET|INT|LIST|MAP|SET|SMALLINT|TEXT|TIME|TIMESTAMP|TIMEUUID|TINYINT|TUPLE|UUID|VARCHAR|VARINT|graph_engine)\b</string>
+            <string>\b(ASCII|BIGINT|BLOB|BOOLEAN|COUNTER|DATE|DECIMAL|DOUBLE|FLOAT|FROZEN|INET|INT|LIST|MAP|SET|SMALLINT|TEXT|TIME|TIMESTAMP|TIMEUUID|TINYINT|TUPLE|UUID|VARCHAR|VARINT|graph_engine)\b</string>
           </dict>
         </array>
       </dict>
@@ -149,7 +149,7 @@
             <key>name</key>
             <string>support.function.cql</string>
             <key>match</key>
-            <string>\b(?i)(count|max|min|sum|avg|token|writetime|ttl)\b</string>
+            <string>\b(count|max|min|sum|avg|token|writetime|ttl)\b</string>
           </dict>
         </array>
       </dict>
